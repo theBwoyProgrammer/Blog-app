@@ -2,8 +2,7 @@
 
 # Blog App
 
-> Description the project.
-This is a blog app that allows authoized authors to post a blog and users to like, comment. This app also has the comments, posts and likes counters
+> This is a blog app that allows authoized authors to post a blog and users to like, comment. This app also has the comments, posts and likes counters
 
 ## Built With
 
