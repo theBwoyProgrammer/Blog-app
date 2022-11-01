@@ -1,1 +1,26 @@
 <h1>Posts index</h1>
+
+<section>
+    <div>
+        <img src="<%= @user.photo %>" />
+        <h1><%= @user.name %></h1>
+        <p>Number of posts:<%= @user.posts_counter || 0 %></p>
+    </div>
+
+<% @user.recent_posts.each do |post| %>
+  <%= link_to user_post_path(@user, post) do %>
+  <h2>Post: <%= post.id %></h2>
+  <% end %>
+  <div>
+    <p><%= post.text %></p>
+
+    <div>
+      <span>Comments: <%= post.comments_counter || 0 %></span>
+      <span>Likes: <%= post.likes_counter || 0 %></span>
+    </div>
+  </div>
+  
+<% end %>
+
+<button>Pagination</button>
+</section>
