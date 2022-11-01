@@ -1,1 +1,20 @@
-<h1>Posts show here</h1>
+<h1>I am here</h1>
+
+<section>
+      <div class= "posts-container">
+
+        <h1 class="post"><%= @post.title %></h1>
+        <div class="posts">
+          <span class="posts-comment">Number of comments: <%= @post.comments_counter || 0 %></span>
+          <span class="posts-likes">Number of likes: <%= @post.likes_counter || 0 %></span>
+        </div>
+            <p>post description: <span><%= @post.text%></span> </p>
+      </div>
+      <div class="recent-comments">
+      <ul>
+      <% @post.recent_comments.each do |comment| %>
+      <li>comments:<%= comment.text %></li>
+       <% end %>
+      </ul>
+      </div>
+</section>
