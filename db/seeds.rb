@@ -17,16 +17,17 @@
 # rails g migration AddPostRefToComments post:references:index
 # rails g migration AddPostRefToLikes post:references:index
 # rails db:migrate
-# first_user = User.create(name: 'Tom', photo: 'https://unsplash.com/photos/F_-0BxGuVvo', bio: 'Teacher from Mexico.')
-# second_user = User.create(name: 'Lilly', photo: 'https://unsplash.com/photos/F_-0BxGuVvo', bio: 'Teacher from Poland.')
+# first_user = User.create(name: 'Hatim', photo: 'https://store-images.s-microsoft.com/image/apps.14401.14335195431380456.948477b0-a258-496a-9152-d98ea44e9f2b.06535fad-ae0d-4d70-bc11-d43c315696cc?mode=scale&q=90&h=300&w=300', bio: 'Software developer.')
+# second_user = User.create(name: 'Lilly', photo: 'https://media.cdnandroid.com/item_images/31758/imagen-talking-tom-cat-2-0thumb.jpeg', bio: 'Teacher from Poland.')
 
-# first_post = Post.create(author: first_user, title: 'First', text: 'This is my first post')
+# third_post = Post.create(author: second_user, title: 'third day as teacher', text: 'This is my first post')
 # second_post = Post.create(author: second_user, title: 'Second', text: 'This is my second post')
 # third_post = Post.create(author: first_user, title: 'Third', text: 'This is my third post')
 # fourth_post = Post.create(author: second_user, title: ' Fourth', text: 'This is my fourth post')
-# Comment.create(post_id: 1, author_id: 2, text: 'Hi Tom!' )
-# Comment.create(post_id: 2, author_id: 1, text: 'Are you done with your project!' )
-# Comment.create(post_id: 1, author_id: 2, text: 'Is it approved yet?' )
-# Comment.create(post_id: 2, author_id: 1, text: 'Are you available for a call?' )
-# Comment.create(post_id: 1, author_id: 2, text: 'Are you enjoying ROR?' )
-# Comment.create(post_id: 2, author_id: 1, text: 'The end!' )
+# Comment.create(post_id: 10, author_id: 6, text: 'thanks!' )
+# Comment.create(post_id: 10, author_id: 6, text: 'gretaaa!' )
+# Comment.create(post_id: 6, author_id: 1, text: 'Are you done with your project!' )
+# Comment.create(post_id: 7, author_id: 2, text: 'Is it approved yet?' )
+# Comment.create(post_id: 3, author_id: 1, text: 'Are you available for a call?' )
+# Comment.create(post_id: 5, author_id: 2, text: 'Are you enjoying ROR?' )
+# Comment.create(post_id: 6, author_id: 1, text: 'The end!' )
