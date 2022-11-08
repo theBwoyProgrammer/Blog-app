@@ -6,7 +6,7 @@ class CommentsController < ApplicationController
 
   def create
     post = Post.find(params[:id])
-    comment = Comment.new(author: current_user, post:, text: comments_params[:text])
+    comment = Comment.new(author: current_user, post: post, text: comments_params[:text])
     if comment.save
       flash[:notice] = 'Comment created successfully'
     else
