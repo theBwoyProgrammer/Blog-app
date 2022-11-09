@@ -7,7 +7,7 @@
         <p>Number of posts:<%= @user.posts_counter || 0 %></p>
     </div>
 
-<% @user.recent_posts.each do |post| %>
+<% @posts.each do |post| %>
   <%= link_to user_post_path(@user, post) do %>
   <h2>Post: <%= post.id %></h2>
   <% end %>

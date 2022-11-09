@@ -21,4 +21,5 @@
 <% end %>
 <button><%=link_to "See all posts", user_posts_path(@user) %></button>
     </div>
+    <%= link_to "Sign out", destroy_user_session_path, method: :delete, data: { turbo_method: :delete } %>
 </section>

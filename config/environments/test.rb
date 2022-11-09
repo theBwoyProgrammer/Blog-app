@@ -12,6 +12,24 @@ Rails.application.configure do
     Bullet.raise         = true # raise an error if n+1 query occurs
   end
 
+  # Devise authentication
+  config.action_mailer.perform_deliveries = true
+  config.action_mailer.raise_delivery_errors = true
+  config.action_mailer.perform_caching = false
+  config.action_mailer.default :charset => "utf-8"
+  config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.smtp_settings = {
+    address: "smtp.gmail.com",
+    port: 587,
+    authentication: "plain",
+    enable_starttls_auto: true,
+    user_name: "testdevelop404@gmail.com",
+    password: "ozuejgktojcrcbet", 
+    domain: "smtp.gmail.com",
+    openssl_verify_mode: "none",
+  }
+
   # Settings specified here will take precedence over those in config/application.rb.
 
   # Turn false under Spring and add config.action_view.cache_template_loading = true.
