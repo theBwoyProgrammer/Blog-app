@@ -4,11 +4,11 @@ class Ability
   include CanCan::Ability
 
   def initialize(user)
-    return unless user.present?
     can :read, :all
+    return unless user.present?
     can :create, Like
-    can :create Comment
-    can :create Post
+    can :create, Comment
+    can :create, Post
     can :destroy, Post do |post|
       post.try(:user) == user
     end

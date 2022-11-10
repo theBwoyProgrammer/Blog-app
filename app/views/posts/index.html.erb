@@ -19,15 +19,14 @@
       <span>Likes: <%= post.likes_counter %></span>
     </div>
   </div>
-  
-<% end %>
-<%= link_to new_user_post_path do %>Add post<% end %>
-<ul>
-  <% if @current_user&.admin?%>
-  <li><%= link_to "Edit Post", edit_post_path(@post) %></li>
-  <li><%= button_to "del", post_path(@post), method: :delete  %></li>
+  <ul>
+  <% if can? :destroy, Post %>
+
+  <li><%= button_to "del", user_post_path(post.author, post.id), method: :delete  %></li>
   <%end%>
 </ul>
+<% end %>
+<%= link_to new_user_post_path do %>Add post<% end %>
 
 <button>Pagination</button>
 </section>

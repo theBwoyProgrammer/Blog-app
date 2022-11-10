@@ -1,7 +1,7 @@
 class PostsController < ApplicationController
   def index
     @user = User.find(params[:user_id])
-    @posts = @user.posts
+    @posts = @user.posts.includes([:author])
   end
 
   def show
@@ -23,6 +23,13 @@ class PostsController < ApplicationController
                      end
     redirect_to user_posts_path
   end
+
+  def destroy
+    @post = Post.find(params[:id])
+    @post.destroy
+    redirect_to root_path, status: :see_other
+  end
+
 
   private
 
