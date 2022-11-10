@@ -30,7 +30,6 @@ class PostsController < ApplicationController
     redirect_to root_path, status: :see_other
   end
 
-
   private
 
   def post_params
