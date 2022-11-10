@@ -22,5 +22,12 @@
   
 <% end %>
 <%= link_to new_user_post_path do %>Add post<% end %>
+<ul>
+  <% if @current_user&.admin?%>
+  <li><%= link_to "Edit Post", edit_post_path(@post) %></li>
+  <li><%= button_to "del", post_path(@post), method: :delete  %></li>
+  <%end%>
+</ul>
+
 <button>Pagination</button>
 </section>
