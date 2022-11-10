@@ -21,6 +21,9 @@ gem 'importmap-rails'
 # Authentication with Devise
 gem 'devise'
 
+# Authorization with cancancan
+gem 'cancancan'
+
 # Hotwire's SPA-like page accelerator [https://turbo.hotwired.dev]
 gem 'turbo-rails'
 

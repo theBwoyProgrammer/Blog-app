@@ -19,8 +19,14 @@
       <span>Likes: <%= post.likes_counter %></span>
     </div>
   </div>
-  
+  <ul>
+  <% if can? :destroy, Post %>
+
+  <li><%= button_to "del", user_post_path(post.author, post.id), method: :delete  %></li>
+  <%end%>
+</ul>
 <% end %>
 <%= link_to new_user_post_path do %>Add post<% end %>
+
 <button>Pagination</button>
 </section>

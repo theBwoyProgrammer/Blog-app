@@ -6,9 +6,12 @@ Rails.application.routes.draw do
   # root "articles#index"
   root "users#index"
   resources :users, only: [:index, :show] do
-    resources :posts, only: [:index, :show, :new, :create]
+    resources :posts, except: [:update] do
+    resources :comments, except: [:update]
+    resources :likes, only: [:create, :destroy]
   end
-  get "/users/:id/posts/:id/new" => "comments#new", as: 'new_user_post_comment'
-  post "/users/:id/posts/:id" => "comments#create", as: 'user_post_comments'
-  post "/users/:id/posts/:id/likes" => "likes#create", as: 'user_post_likes'
+  end
+  # get "/users/:id/posts/:id/new" => "comments#new", as: 'new_user_post_comment'
+  # post "/users/:id/posts/:id" => "comments#create", as: 'user_post_comments'
+  # post "/users/:id/posts/:id/likes" => "likes#create", as: 'user_post_likes'
 end

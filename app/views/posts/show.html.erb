@@ -14,8 +14,9 @@
       <ul>
       <% @post.recent_comments.each do |comment| %>
       <li>comments:<%= comment.text %></li>
+      <%=link_to "delete comment", user_post_comment_path(comment.author, comment.post, comment), method: :delete, data: { turbo_method: :delete }  %>
        <% end %>
-       <%= link_to new_user_post_comment_path do %>Add comment<% end %>
+       <%= link_to 'Add comment', new_user_post_comment_path(@user, @post) %>
        <%= form_with url: "/users/#{@post.author_id}/posts/#{@post.id}/likes", scope: :like do |f| %>
   <%= f.submit " Add Like" %>
   <% end %>
