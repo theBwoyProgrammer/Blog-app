@@ -40,6 +40,9 @@ gem 'jbuilder'
 # Rubocop
 gem 'rubocop', '>= 1.0', '< 2.0'
 
+# api documentation
+gem 'rswag-api'
+gem 'rswag-ui'
 # Use Redis adapter to run Action Cable in production
 # gem "redis", "~> 4.0"
 
@@ -68,6 +71,7 @@ group :development, :test do
   gem 'ffi'
   gem 'rails-controller-testing'
   gem 'rspec-rails'
+  gem 'rswag-specs'
 end
 
 group :development do
