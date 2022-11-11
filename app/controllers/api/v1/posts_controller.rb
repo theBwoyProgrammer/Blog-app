@@ -1,7 +1,7 @@
 module Api
   module V1
     class PostsController < AuthenticationController
-      before_action :fetch_user, only: [:index, :show]
+      before_action :fetch_user, only: %i[index show]
       before_action :authorize_request
 
       def index
@@ -10,8 +10,9 @@ module Api
       end
 
       private
-      def fetch_user 
-       @user = User.find(params[:user_id])
+
+      def fetch_user
+        @user = User.find(params[:user_id])
       end
     end
   end
