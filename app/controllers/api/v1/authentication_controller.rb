@@ -1,18 +1,10 @@
 module Api
     module V1
         class AuthenticationController < ApiController
-        rescue from ActionController::ParameterMissing, with: :parameter_missing
-        before_action :authorize_request, except [:create]
+        rescue_from ActionController::ParameterMissing, with: :parameter_missing
+        before_action :authorize_request, except: [:create, :index]
 
-        def create
-            user = User.find_by(name: params[:name])
-            if user&.valid_password?(params[:password])
-                token = AuthenticationTokenService.call(user.id)
-                render json: {token}, status: :created
-            else
-                render json: {error: 'unauthorized'}, status: :unauthorized
-            end
-        end
+        
     
         private
     

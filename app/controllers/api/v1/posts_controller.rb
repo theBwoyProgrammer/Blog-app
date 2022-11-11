@@ -5,7 +5,7 @@ module Api
       before_action :authorize_request
 
       def index
-        @posts = @user ? @user.posts.includes(:comments, :user) : Post.includes(:comments, :user) # n+1 fix
+        @posts = current_user ? current_user.posts.includes(:comments) : Post.includes(:comments)
         render json: @posts
       end
 

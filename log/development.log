@@ -12102,3 +12102,401 @@ Completed 401 Unauthorized in 2ms (Allocations: 191)
 ActionDispatch::Request::Session::DisabledSessionError (Your application has sessions disabled. To write to the session you must first configure a session store):
   
 config/initializers/devise.rb:7:in `respond'
+Started GET "/" for 127.0.0.1 at 2022-11-11 20:19:50 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (2.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#index as HTML
+Completed 401 Unauthorized in 236ms (ActiveRecord: 0.0ms | Allocations: 3509)
+
+
+  
+ActionDispatch::Request::Session::DisabledSessionError (Your application has sessions disabled. To write to the session you must first configure a session store):
+  
+config/initializers/devise.rb:7:in `respond'
+Started GET "/" for 127.0.0.1 at 2022-11-11 20:21:01 +0300
+Processing by UsersController#index as HTML
+Completed 401 Unauthorized in 21ms (ActiveRecord: 0.0ms | Allocations: 1765)
+
+
+  
+ActionDispatch::Request::Session::DisabledSessionError (Your application has sessions disabled. To write to the session you must first configure a session store):
+  
+config/initializers/devise.rb:7:in `respond'
+Started GET "/" for 127.0.0.1 at 2022-11-11 20:21:35 +0300
+Processing by UsersController#index as HTML
+Completed 401 Unauthorized in 17ms (ActiveRecord: 0.0ms | Allocations: 1739)
+
+
+  
+ActionDispatch::Request::Session::DisabledSessionError (Your application has sessions disabled. To write to the session you must first configure a session store):
+  
+config/initializers/devise.rb:7:in `respond'
+Started GET "/" for 127.0.0.1 at 2022-11-11 20:22:18 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (4.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#index as HTML
+Completed 401 Unauthorized in 49ms (ActiveRecord: 0.0ms | Allocations: 3211)
+
+
+  
+ActionDispatch::Request::Session::DisabledSessionError (Your application has sessions disabled. To write to the session you must first configure a session store):
+  
+config/initializers/devise.rb:7:in `respond'
+Started GET "/" for 127.0.0.1 at 2022-11-11 20:25:36 +0300
+Processing by UsersController#index as HTML
+Completed 401 Unauthorized in 4ms (ActiveRecord: 0.0ms | Allocations: 224)
+
+
+  
+ActionDispatch::Request::Session::DisabledSessionError (Your application has sessions disabled. To write to the session you must first configure a session store):
+  
+config/initializers/devise.rb:7:in `respond'
+Started GET "/" for 127.0.0.1 at 2022-11-11 20:26:15 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (3.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (6.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+Completed 401 Unauthorized in 230ms (ActiveRecord: 80.8ms | Allocations: 7907)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2022-11-11 20:26:17 +0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 19.4ms | Allocations: 845)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 175.9ms | Allocations: 4300)
+  Rendered layout layouts/application.html.erb (Duration: 422.0ms | Allocations: 46463)
+Completed 200 OK in 527ms (Views: 459.8ms | ActiveRecord: 0.0ms | Allocations: 59056)
+
+
+Started GET "/api/v1/users" for 127.0.0.1 at 2022-11-11 20:29:17 +0300
+  
+SyntaxError (D:/Software Development/GitHub/MODULES/Ruby on Rails/Blog-app/app/controllers/api/v1/authentication_controller.rb:4: syntax error, unexpected constant, expecting `do' or '{' or '('
+...   rescue from ActionController::ParameterMissing, with: :pa...
+...               ^~~~~~~~~~~~~~~~
+D:/Software Development/GitHub/MODULES/Ruby on Rails/Blog-app/app/controllers/api/v1/authentication_controller.rb:4: syntax error, unexpected label, expecting '='
+...roller::ParameterMissing, with: :parameter_missing
+...                          ^~~~~
+D:/Software Development/GitHub/MODULES/Ruby on Rails/Blog-app/app/controllers/api/v1/authentication_controller.rb:5: syntax error, unexpected [, expecting `do' or '{' or '('
+...on :authorize_request, except [:create]
+...                              ^
+D:/Software Development/GitHub/MODULES/Ruby on Rails/Blog-app/app/controllers/api/v1/authentication_controller.rb:11: syntax error, unexpected '}', expecting =>
+...           render json: {token}, status: :created
+...                              ^
+):
+  
+app/controllers/api/v1/authentication_controller.rb:4: syntax error, unexpected constant, expecting `do' or '{' or '('
+app/controllers/api/v1/authentication_controller.rb:4: syntax error, unexpected label, expecting '='
+app/controllers/api/v1/authentication_controller.rb:5: syntax error, unexpected [, expecting `do' or '{' or '('
+app/controllers/api/v1/authentication_controller.rb:11: syntax error, unexpected '}', expecting =>
+app/controllers/api/v1/authentication_controller.rb:4: syntax error, unexpected constant, expecting `do' or '{' or '('
+app/controllers/api/v1/authentication_controller.rb:4: syntax error, unexpected label, expecting '='
+app/controllers/api/v1/authentication_controller.rb:5: syntax error, unexpected [, expecting `do' or '{' or '('
+app/controllers/api/v1/authentication_controller.rb:11: syntax error, unexpected '}', expecting =>
+app/controllers/api/v1/authentication_controller.rb:4: syntax error, unexpected constant, expecting `do' or '{' or '('
+app/controllers/api/v1/authentication_controller.rb:4: syntax error, unexpected label, expecting '='
+app/controllers/api/v1/authentication_controller.rb:5: syntax error, unexpected [, expecting `do' or '{' or '('
+app/controllers/api/v1/authentication_controller.rb:11: syntax error, unexpected '}', expecting =>
+app/controllers/api/v1/users_controller.rb:3:in `<module:V1>'
+app/controllers/api/v1/users_controller.rb:2:in `<module:Api>'
+app/controllers/api/v1/users_controller.rb:1:in `<main>'
+Started GET "/api/v1/users" for 127.0.0.1 at 2022-11-11 20:30:11 +0300
+  
+SyntaxError (D:/Software Development/GitHub/MODULES/Ruby on Rails/Blog-app/app/controllers/api/v1/authentication_controller.rb:4: syntax error, unexpected constant, expecting `do' or '{' or '('
+...   rescue from ActionController::Parameter_missing, with: :p...
+...               ^~~~~~~~~~~~~~~~
+D:/Software Development/GitHub/MODULES/Ruby on Rails/Blog-app/app/controllers/api/v1/authentication_controller.rb:4: syntax error, unexpected label, expecting '='
+...oller::Parameter_missing, with: :parameter_missing
+...                          ^~~~~
+D:/Software Development/GitHub/MODULES/Ruby on Rails/Blog-app/app/controllers/api/v1/authentication_controller.rb:5: syntax error, unexpected [, expecting `do' or '{' or '('
+...on :authorize_request, except [:create]
+...                              ^
+D:/Software Development/GitHub/MODULES/Ruby on Rails/Blog-app/app/controllers/api/v1/authentication_controller.rb:11: syntax error, unexpected '}', expecting =>
+...           render json: {token}, status: :created
+...                              ^
+):
+  
+app/controllers/api/v1/authentication_controller.rb:4: syntax error, unexpected constant, expecting `do' or '{' or '('
+app/controllers/api/v1/authentication_controller.rb:4: syntax error, unexpected label, expecting '='
+app/controllers/api/v1/authentication_controller.rb:5: syntax error, unexpected [, expecting `do' or '{' or '('
+app/controllers/api/v1/authentication_controller.rb:11: syntax error, unexpected '}', expecting =>
+app/controllers/api/v1/authentication_controller.rb:4: syntax error, unexpected constant, expecting `do' or '{' or '('
+app/controllers/api/v1/authentication_controller.rb:4: syntax error, unexpected label, expecting '='
+app/controllers/api/v1/authentication_controller.rb:5: syntax error, unexpected [, expecting `do' or '{' or '('
+app/controllers/api/v1/authentication_controller.rb:11: syntax error, unexpected '}', expecting =>
+app/controllers/api/v1/authentication_controller.rb:4: syntax error, unexpected constant, expecting `do' or '{' or '('
+app/controllers/api/v1/authentication_controller.rb:4: syntax error, unexpected label, expecting '='
+app/controllers/api/v1/authentication_controller.rb:5: syntax error, unexpected [, expecting `do' or '{' or '('
+app/controllers/api/v1/authentication_controller.rb:11: syntax error, unexpected '}', expecting =>
+app/controllers/api/v1/users_controller.rb:3:in `<module:V1>'
+app/controllers/api/v1/users_controller.rb:2:in `<module:Api>'
+app/controllers/api/v1/users_controller.rb:1:in `<main>'
+Started GET "/api/v1/users" for 127.0.0.1 at 2022-11-11 20:30:41 +0300
+  
+SyntaxError (D:/Software Development/GitHub/MODULES/Ruby on Rails/Blog-app/app/controllers/api/v1/authentication_controller.rb:4: syntax error, unexpected constant, expecting `do' or '{' or '('
+...   rescue from ActionController::parameter_missing, with: :p...
+...               ^~~~~~~~~~~~~~~~
+D:/Software Development/GitHub/MODULES/Ruby on Rails/Blog-app/app/controllers/api/v1/authentication_controller.rb:4: syntax error, unexpected label, expecting '='
+...oller::parameter_missing, with: :parameter_missing
+...                          ^~~~~
+D:/Software Development/GitHub/MODULES/Ruby on Rails/Blog-app/app/controllers/api/v1/authentication_controller.rb:5: syntax error, unexpected [, expecting `do' or '{' or '('
+...on :authorize_request, except [:create]
+...                              ^
+D:/Software Development/GitHub/MODULES/Ruby on Rails/Blog-app/app/controllers/api/v1/authentication_controller.rb:11: syntax error, unexpected '}', expecting =>
+...           render json: {token}, status: :created
+...                              ^
+):
+  
+app/controllers/api/v1/authentication_controller.rb:4: syntax error, unexpected constant, expecting `do' or '{' or '('
+app/controllers/api/v1/authentication_controller.rb:4: syntax error, unexpected label, expecting '='
+app/controllers/api/v1/authentication_controller.rb:5: syntax error, unexpected [, expecting `do' or '{' or '('
+app/controllers/api/v1/authentication_controller.rb:11: syntax error, unexpected '}', expecting =>
+app/controllers/api/v1/authentication_controller.rb:4: syntax error, unexpected constant, expecting `do' or '{' or '('
+app/controllers/api/v1/authentication_controller.rb:4: syntax error, unexpected label, expecting '='
+app/controllers/api/v1/authentication_controller.rb:5: syntax error, unexpected [, expecting `do' or '{' or '('
+app/controllers/api/v1/authentication_controller.rb:11: syntax error, unexpected '}', expecting =>
+app/controllers/api/v1/authentication_controller.rb:4: syntax error, unexpected constant, expecting `do' or '{' or '('
+app/controllers/api/v1/authentication_controller.rb:4: syntax error, unexpected label, expecting '='
+app/controllers/api/v1/authentication_controller.rb:5: syntax error, unexpected [, expecting `do' or '{' or '('
+app/controllers/api/v1/authentication_controller.rb:11: syntax error, unexpected '}', expecting =>
+app/controllers/api/v1/users_controller.rb:3:in `<module:V1>'
+app/controllers/api/v1/users_controller.rb:2:in `<module:Api>'
+app/controllers/api/v1/users_controller.rb:1:in `<main>'
+Started GET "/api/v1/users" for 127.0.0.1 at 2022-11-11 20:31:18 +0300
+  
+SyntaxError (D:/Software Development/GitHub/MODULES/Ruby on Rails/Blog-app/app/controllers/api/v1/authentication_controller.rb:5: syntax error, unexpected [, expecting `do' or '{' or '('
+...on :authorize_request, except [:create]
+...                              ^
+D:/Software Development/GitHub/MODULES/Ruby on Rails/Blog-app/app/controllers/api/v1/authentication_controller.rb:11: syntax error, unexpected '}', expecting =>
+...           render json: {token}, status: :created
+...                              ^
+):
+  
+app/controllers/api/v1/authentication_controller.rb:5: syntax error, unexpected [, expecting `do' or '{' or '('
+app/controllers/api/v1/authentication_controller.rb:11: syntax error, unexpected '}', expecting =>
+app/controllers/api/v1/authentication_controller.rb:5: syntax error, unexpected [, expecting `do' or '{' or '('
+app/controllers/api/v1/authentication_controller.rb:11: syntax error, unexpected '}', expecting =>
+app/controllers/api/v1/authentication_controller.rb:5: syntax error, unexpected [, expecting `do' or '{' or '('
+app/controllers/api/v1/authentication_controller.rb:11: syntax error, unexpected '}', expecting =>
+app/controllers/api/v1/users_controller.rb:3:in `<module:V1>'
+app/controllers/api/v1/users_controller.rb:2:in `<module:Api>'
+app/controllers/api/v1/users_controller.rb:1:in `<main>'
+Started GET "/api/v1/users" for 127.0.0.1 at 2022-11-11 20:33:53 +0300
+  
+SyntaxError (D:/Software Development/GitHub/MODULES/Ruby on Rails/Blog-app/app/controllers/api/v1/authentication_controller.rb:5: syntax error, unexpected [, expecting `do' or '{' or '('
+...on :authorize_request, except [:create]
+...                              ^
+D:/Software Development/GitHub/MODULES/Ruby on Rails/Blog-app/app/controllers/api/v1/authentication_controller.rb:11: syntax error, unexpected '}', expecting =>
+...           render json: {token}, status: :created
+...                              ^
+):
+  
+app/controllers/api/v1/authentication_controller.rb:5: syntax error, unexpected [, expecting `do' or '{' or '('
+app/controllers/api/v1/authentication_controller.rb:11: syntax error, unexpected '}', expecting =>
+app/controllers/api/v1/authentication_controller.rb:5: syntax error, unexpected [, expecting `do' or '{' or '('
+app/controllers/api/v1/authentication_controller.rb:11: syntax error, unexpected '}', expecting =>
+app/controllers/api/v1/authentication_controller.rb:5: syntax error, unexpected [, expecting `do' or '{' or '('
+app/controllers/api/v1/authentication_controller.rb:11: syntax error, unexpected '}', expecting =>
+app/controllers/api/v1/users_controller.rb:3:in `<module:V1>'
+app/controllers/api/v1/users_controller.rb:2:in `<module:Api>'
+app/controllers/api/v1/users_controller.rb:1:in `<main>'
+Started GET "/api/v1/users" for 127.0.0.1 at 2022-11-11 20:35:36 +0300
+  
+SyntaxError (D:/Software Development/GitHub/MODULES/Ruby on Rails/Blog-app/app/controllers/api/v1/authentication_controller.rb:5: syntax error, unexpected [, expecting `do' or '{' or '('
+...on :authorize_request, except [:create]
+...                              ^
+D:/Software Development/GitHub/MODULES/Ruby on Rails/Blog-app/app/controllers/api/v1/authentication_controller.rb:11: syntax error, unexpected '}', expecting =>
+...           render json: {token}, status: :created
+...                              ^
+):
+  
+app/controllers/api/v1/authentication_controller.rb:5: syntax error, unexpected [, expecting `do' or '{' or '('
+app/controllers/api/v1/authentication_controller.rb:11: syntax error, unexpected '}', expecting =>
+app/controllers/api/v1/authentication_controller.rb:5: syntax error, unexpected [, expecting `do' or '{' or '('
+app/controllers/api/v1/authentication_controller.rb:11: syntax error, unexpected '}', expecting =>
+app/controllers/api/v1/authentication_controller.rb:5: syntax error, unexpected [, expecting `do' or '{' or '('
+app/controllers/api/v1/authentication_controller.rb:11: syntax error, unexpected '}', expecting =>
+app/controllers/api/v1/users_controller.rb:3:in `<module:V1>'
+app/controllers/api/v1/users_controller.rb:2:in `<module:Api>'
+app/controllers/api/v1/users_controller.rb:1:in `<main>'
+Started GET "/api/v1/users" for 127.0.0.1 at 2022-11-11 20:36:21 +0300
+  
+SyntaxError (D:/Software Development/GitHub/MODULES/Ruby on Rails/Blog-app/app/controllers/api/v1/authentication_controller.rb:5: syntax error, unexpected ( arg, expecting `do' or '{' or '('
+...on :authorize_request, except (:create)
+...                              ^
+D:/Software Development/GitHub/MODULES/Ruby on Rails/Blog-app/app/controllers/api/v1/authentication_controller.rb:11: syntax error, unexpected '}', expecting =>
+...           render json: {token}, status: :created
+...                              ^
+):
+  
+app/controllers/api/v1/authentication_controller.rb:5: syntax error, unexpected ( arg, expecting `do' or '{' or '('
+app/controllers/api/v1/authentication_controller.rb:11: syntax error, unexpected '}', expecting =>
+app/controllers/api/v1/authentication_controller.rb:5: syntax error, unexpected ( arg, expecting `do' or '{' or '('
+app/controllers/api/v1/authentication_controller.rb:11: syntax error, unexpected '}', expecting =>
+app/controllers/api/v1/authentication_controller.rb:5: syntax error, unexpected ( arg, expecting `do' or '{' or '('
+app/controllers/api/v1/authentication_controller.rb:11: syntax error, unexpected '}', expecting =>
+app/controllers/api/v1/users_controller.rb:3:in `<module:V1>'
+app/controllers/api/v1/users_controller.rb:2:in `<module:Api>'
+app/controllers/api/v1/users_controller.rb:1:in `<main>'
+Started GET "/api/v1/users" for 127.0.0.1 at 2022-11-11 20:36:51 +0300
+  
+SyntaxError (D:/Software Development/GitHub/MODULES/Ruby on Rails/Blog-app/app/controllers/api/v1/authentication_controller.rb:11: syntax error, unexpected '}', expecting =>
+...           render json: {token}, status: :created
+...                              ^
+):
+  
+app/controllers/api/v1/authentication_controller.rb:11: syntax error, unexpected '}', expecting =>
+app/controllers/api/v1/authentication_controller.rb:11: syntax error, unexpected '}', expecting =>
+app/controllers/api/v1/authentication_controller.rb:11: syntax error, unexpected '}', expecting =>
+app/controllers/api/v1/users_controller.rb:3:in `<module:V1>'
+app/controllers/api/v1/users_controller.rb:2:in `<module:Api>'
+app/controllers/api/v1/users_controller.rb:1:in `<main>'
+Started GET "/api/v1/users" for 127.0.0.1 at 2022-11-11 20:37:13 +0300
+  
+SyntaxError (D:/Software Development/GitHub/MODULES/Ruby on Rails/Blog-app/app/controllers/api/v1/authentication_controller.rb:11: syntax error, unexpected '}', expecting =>
+...           render json: {token}, status: :created
+...                              ^
+):
+  
+app/controllers/api/v1/authentication_controller.rb:11: syntax error, unexpected '}', expecting =>
+app/controllers/api/v1/authentication_controller.rb:11: syntax error, unexpected '}', expecting =>
+app/controllers/api/v1/authentication_controller.rb:11: syntax error, unexpected '}', expecting =>
+app/controllers/api/v1/users_controller.rb:3:in `<module:V1>'
+app/controllers/api/v1/users_controller.rb:2:in `<module:Api>'
+app/controllers/api/v1/users_controller.rb:1:in `<main>'
+Started GET "/api/v1/users" for 127.0.0.1 at 2022-11-11 20:38:13 +0300
+  
+SyntaxError (D:/Software Development/GitHub/MODULES/Ruby on Rails/Blog-app/app/controllers/api_controller.rb:17: syntax error, unexpected `end', expecting end-of-input):
+  
+app/controllers/api_controller.rb:17: syntax error, unexpected `end', expecting end-of-input
+app/controllers/api_controller.rb:17: syntax error, unexpected `end', expecting end-of-input
+app/controllers/api_controller.rb:17: syntax error, unexpected `end', expecting end-of-input
+app/controllers/api/v1/authentication_controller.rb:3:in `<module:V1>'
+app/controllers/api/v1/authentication_controller.rb:2:in `<module:Api>'
+app/controllers/api/v1/authentication_controller.rb:1:in `<main>'
+app/controllers/api/v1/users_controller.rb:3:in `<module:V1>'
+app/controllers/api/v1/users_controller.rb:2:in `<module:Api>'
+app/controllers/api/v1/users_controller.rb:1:in `<main>'
+Started GET "/api/v1/users" for 127.0.0.1 at 2022-11-11 20:38:49 +0300
+  
+NameError (uninitialized constant ApiController
+
+Class ApiController < ActionController::API
+      ^^^^^^^^^^^^^
+Did you mean?  LikesController):
+  
+app/controllers/api_controller.rb:1:in `<main>'
+app/controllers/api/v1/authentication_controller.rb:3:in `<module:V1>'
+app/controllers/api/v1/authentication_controller.rb:2:in `<module:Api>'
+app/controllers/api/v1/authentication_controller.rb:1:in `<main>'
+app/controllers/api/v1/users_controller.rb:3:in `<module:V1>'
+app/controllers/api/v1/users_controller.rb:2:in `<module:Api>'
+app/controllers/api/v1/users_controller.rb:1:in `<main>'
+Started GET "/api/v1/users" for 127.0.0.1 at 2022-11-11 20:39:09 +0300
+  
+SyntaxError (D:/Software Development/GitHub/MODULES/Ruby on Rails/Blog-app/app/controllers/api_controller.rb:17: syntax error, unexpected `end', expecting end-of-input):
+  
+app/controllers/api_controller.rb:17: syntax error, unexpected `end', expecting end-of-input
+app/controllers/api_controller.rb:17: syntax error, unexpected `end', expecting end-of-input
+app/controllers/api_controller.rb:17: syntax error, unexpected `end', expecting end-of-input
+app/controllers/api/v1/authentication_controller.rb:3:in `<module:V1>'
+app/controllers/api/v1/authentication_controller.rb:2:in `<module:Api>'
+app/controllers/api/v1/authentication_controller.rb:1:in `<main>'
+app/controllers/api/v1/users_controller.rb:3:in `<module:V1>'
+app/controllers/api/v1/users_controller.rb:2:in `<module:Api>'
+app/controllers/api/v1/users_controller.rb:1:in `<main>'
+Started GET "/api/v1/users" for 127.0.0.1 at 2022-11-11 20:39:46 +0300
+  
+NameError (uninitialized constant ApiController
+
+Class ApiController < ActionController::API
+      ^^^^^^^^^^^^^
+Did you mean?  LikesController):
+  
+app/controllers/api_controller.rb:1:in `<main>'
+app/controllers/api/v1/authentication_controller.rb:3:in `<module:V1>'
+app/controllers/api/v1/authentication_controller.rb:2:in `<module:Api>'
+app/controllers/api/v1/authentication_controller.rb:1:in `<main>'
+app/controllers/api/v1/users_controller.rb:3:in `<module:V1>'
+app/controllers/api/v1/users_controller.rb:2:in `<module:Api>'
+app/controllers/api/v1/users_controller.rb:1:in `<main>'
+Started GET "/api/v1/users" for 127.0.0.1 at 2022-11-11 20:41:53 +0300
+  
+NoMethodError (undefined method `includes' for ApiController:Class
+
+   includes ActionController::HttpAuthentication::Token::ControllerMethods
+   ^^^^^^^^
+Did you mean?  include
+               include?
+               included):
+  
+app/controllers/api_controller.rb:2:in `<class:ApiController>'
+app/controllers/api_controller.rb:1:in `<main>'
+app/controllers/api/v1/authentication_controller.rb:3:in `<module:V1>'
+app/controllers/api/v1/authentication_controller.rb:2:in `<module:Api>'
+app/controllers/api/v1/authentication_controller.rb:1:in `<main>'
+app/controllers/api/v1/users_controller.rb:3:in `<module:V1>'
+app/controllers/api/v1/users_controller.rb:2:in `<module:Api>'
+app/controllers/api/v1/users_controller.rb:1:in `<main>'
+Started GET "/api/v1/users" for 127.0.0.1 at 2022-11-11 20:42:28 +0300
+Processing by Api::V1::UsersController#index as HTML
+Completed 500 Internal Server Error in 31ms (ActiveRecord: 0.0ms | Allocations: 3114)
+
+
+  
+NameError (uninitialized constant ApiController::JWT
+
+        rescue JWT::DecodeError => e
+               ^^^):
+  
+app/controllers/api_controller.rb:10:in `rescue in authorize_request'
+app/controllers/api_controller.rb:7:in `authorize_request'
+Started GET "/api/v1/users" for 127.0.0.1 at 2022-11-11 20:43:44 +0300
+Processing by Api::V1::UsersController#index as HTML
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms | Allocations: 2887)
+
+
+  
+NameError (uninitialized constant ApiController::JWT
+
+        rescue JWT::DecodeError => e
+               ^^^):
+  
+app/controllers/api_controller.rb:10:in `rescue in authorize_request'
+app/controllers/api_controller.rb:7:in `authorize_request'
+Started GET "/api/v1/users" for 127.0.0.1 at 2022-11-11 20:43:49 +0300
+Processing by Api::V1::UsersController#index as HTML
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms | Allocations: 2887)
+
+
+  
+NameError (uninitialized constant ApiController::JWT
+
+        rescue JWT::DecodeError => e
+               ^^^):
+  
+app/controllers/api_controller.rb:10:in `rescue in authorize_request'
+app/controllers/api_controller.rb:7:in `authorize_request'
+Started GET "/api/v1/users" for 127.0.0.1 at 2022-11-11 20:48:04 +0300
+Processing by Api::V1::UsersController#index as HTML
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms | Allocations: 2887)
+
+
+  
+NameError (uninitialized constant ApiController::JWT
+
+        rescue JWT::DecodeError => e
+               ^^^):
+  
+app/controllers/api_controller.rb:10:in `rescue in authorize_request'
+app/controllers/api_controller.rb:7:in `authorize_request'
+Started GET "/api/v1/users" for 127.0.0.1 at 2022-11-11 20:48:08 +0300
+Processing by Api::V1::UsersController#index as HTML
+Completed 500 Internal Server Error in 5ms (Allocations: 2886)
+
+
+  
+NameError (uninitialized constant ApiController::JWT
+
+        rescue JWT::DecodeError => e
+               ^^^):
+  
+app/controllers/api_controller.rb:10:in `rescue in authorize_request'
+app/controllers/api_controller.rb:7:in `authorize_request'

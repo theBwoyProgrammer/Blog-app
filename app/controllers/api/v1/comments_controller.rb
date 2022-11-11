@@ -3,21 +3,21 @@ module Api
     class CommentsController < AuthenticationController
       def index
         @post = Post.find(params[:post_id])
-        @comments = @post.comments.includes(:user)
+        @comments = @post.comments
         render json: @comments
       end
 
       def create
         @post = Post.find(params[:post_id])
         @comment = @post.comments.new(comment_params)
-        @comment.user = @post.user
+        @comment.author_id = params[:user_id]
         render json: @comment, status: :created if @comment.save
       end
 
       private
 
       def comment_params
-        params.require(:comment).permit(:text)
+        params.permit(:text)
       end
     end
   end
