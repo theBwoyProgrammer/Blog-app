@@ -24,6 +24,10 @@ gem 'devise'
 # Authorization with cancancan
 gem 'cancancan'
 
+# JWT gem for authentication
+gem 'devise-jwt'
+gem 'jwt'
+
 # Hotwire's SPA-like page accelerator [https://turbo.hotwired.dev]
 gem 'turbo-rails'
 
