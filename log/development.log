@@ -11903,3 +11903,138 @@ Processing by PostsController#show as HTML
 Completed 200 OK in 35ms (Views: 21.7ms | ActiveRecord: 1.6ms | Allocations: 6957)
 
 
+Started GET "/" for 127.0.0.1 at 2022-11-11 13:08:42 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (49.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (145.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:2
+  Rendered users/index.html.erb within layouts/application (Duration: 44.6ms | Allocations: 1808)
+  Rendered layout layouts/application.html.erb (Duration: 957.4ms | Allocations: 44117)
+Completed 200 OK in 1779ms (Views: 1038.2ms | ActiveRecord: 295.9ms | Allocations: 63677)
+
+
+Started GET "/users/13" for 127.0.0.1 at 2022-11-11 13:14:03 +0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"13"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mPost Load (93.7ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."author_id" = $1 ORDER BY "posts"."created_at" DESC LIMIT $2[0m  [["author_id", 13], ["LIMIT", 3]]
+  ↳ app/views/users/show.html.erb:10
+  Rendered users/show.html.erb within layouts/application (Duration: 528.1ms | Allocations: 18849)
+  Rendered layout layouts/application.html.erb (Duration: 539.5ms | Allocations: 21679)
+Completed 200 OK in 553ms (Views: 441.3ms | ActiveRecord: 100.6ms | Allocations: 25052)
+
+
+Started GET "/users/13" for 127.0.0.1 at 2022-11-11 15:06:32 +0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"13"}
+  [1m[36mUser Load (3.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mPost Load (1.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."author_id" = $1 ORDER BY "posts"."created_at" DESC LIMIT $2[0m  [["author_id", 13], ["LIMIT", 3]]
+  ↳ app/views/users/show.html.erb:10
+  Rendered users/show.html.erb within layouts/application (Duration: 15.2ms | Allocations: 1140)
+  Rendered layout layouts/application.html.erb (Duration: 35.5ms | Allocations: 3858)
+Completed 200 OK in 284ms (Views: 37.2ms | ActiveRecord: 27.0ms | Allocations: 9426)
+
+
+Started GET "/users/13" for 127.0.0.1 at 2022-11-11 15:31:36 +0300
+  
+NoMethodError (undefined method `protect_from_forgery' for ApplicationController:Class
+
+  protect_from_forgery with: :exception
+  ^^^^^^^^^^^^^^^^^^^^):
+  
+app/controllers/application_controller.rb:3:in `<class:ApplicationController>'
+app/controllers/application_controller.rb:1:in `<main>'
+app/controllers/users_controller.rb:1:in `<main>'
+Started GET "/users/13" for 127.0.0.1 at 2022-11-11 15:32:08 +0300
+  
+NoMethodError (undefined method `protect_from_forgery' for ApplicationController:Class
+
+  protect_from_forgery with: :exception
+  ^^^^^^^^^^^^^^^^^^^^):
+  
+app/controllers/application_controller.rb:3:in `<class:ApplicationController>'
+app/controllers/application_controller.rb:1:in `<main>'
+app/controllers/users_controller.rb:1:in `<main>'
+Started GET "/users/13" for 127.0.0.1 at 2022-11-11 15:44:35 +0300
+  
+NoMethodError (undefined method `protect_from_forgery' for ApplicationController:Class
+
+  protect_from_forgery with: :exception
+  ^^^^^^^^^^^^^^^^^^^^):
+  
+app/controllers/application_controller.rb:3:in `<class:ApplicationController>'
+app/controllers/application_controller.rb:1:in `<main>'
+app/controllers/users_controller.rb:1:in `<main>'
+  [1m[36mUser Delete All (236.6ms)[0m  [1m[31mDELETE FROM "users"[0m
+  [1m[36mPost Load (0.8ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  [1m[36mPost Delete All (172.7ms)[0m  [1m[31mDELETE FROM "posts"[0m
+  [1m[36mUser Delete All (19.2ms)[0m  [1m[31mDELETE FROM "users"[0m
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+Started GET "/" for 127.0.0.1 at 2022-11-11 16:45:04 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+NoMethodError (undefined method `protect_from_forgery' for ApplicationController:Class
+
+  protect_from_forgery with: :exception
+  ^^^^^^^^^^^^^^^^^^^^):
+  
+app/controllers/application_controller.rb:3:in `<class:ApplicationController>'
+app/controllers/application_controller.rb:1:in `<main>'
+app/controllers/users_controller.rb:1:in `<main>'
+Started GET "/" for 127.0.0.1 at 2022-11-11 16:46:36 +0300
+  
+NoMethodError (undefined method `protect_from_forgery' for ApplicationController:Class
+
+  protect_from_forgery with: :exception
+  ^^^^^^^^^^^^^^^^^^^^):
+  
+app/controllers/application_controller.rb:3:in `<class:ApplicationController>'
+app/controllers/application_controller.rb:2:in `<main>'
+app/controllers/users_controller.rb:1:in `<main>'
+Started GET "/" for 127.0.0.1 at 2022-11-11 16:48:01 +0300
+Processing by UsersController#index as HTML
+Completed 401 Unauthorized in 50ms (ActiveRecord: 0.0ms | Allocations: 3202)
+
+
+  
+ActionDispatch::Request::Session::DisabledSessionError (Your application has sessions disabled. To write to the session you must first configure a session store):
+  
+config/initializers/devise.rb:7:in `respond'
+Started GET "/" for 127.0.0.1 at 2022-11-11 16:50:22 +0300
+Processing by UsersController#index as HTML
+Completed 401 Unauthorized in 24ms (ActiveRecord: 0.0ms | Allocations: 2846)
+
+
+  
+ActionDispatch::Request::Session::DisabledSessionError (Your application has sessions disabled. To write to the session you must first configure a session store):
+  
+config/initializers/devise.rb:7:in `respond'
+Started GET "/" for 127.0.0.1 at 2022-11-11 16:51:22 +0300
+Processing by UsersController#index as HTML
+Completed 401 Unauthorized in 26ms (ActiveRecord: 0.0ms | Allocations: 1774)
+
+
+  
+ActionDispatch::Request::Session::DisabledSessionError (Your application has sessions disabled. To write to the session you must first configure a session store):
+  
+config/initializers/devise.rb:7:in `respond'
+Started GET "/" for 127.0.0.1 at 2022-11-11 16:56:32 +0300
+Processing by UsersController#index as HTML
+Completed 401 Unauthorized in 28ms (ActiveRecord: 0.0ms | Allocations: 1774)
+
+
+  
+ActionDispatch::Request::Session::DisabledSessionError (Your application has sessions disabled. To write to the session you must first configure a session store):
+  
+config/initializers/devise.rb:7:in `respond'
