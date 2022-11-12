@@ -14,8 +14,7 @@ RSpec.describe 'api/user', type: :request do
                     password_confirmation: { type: :string }
 
                 },
-                require [ 'name', 'email', 'password', 'password_confirmation' ]
-
+                require[ 'name', 'email', 'password', 'password_confirmation' ]
             }
             response '201', 'user created' do
                 let(:user) { { name: 'Doe', email: 'jonhbosco@gmail.com', password: 'password', password_confirmation: 'password' } }
