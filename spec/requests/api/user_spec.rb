@@ -1,3 +1,4 @@
+# rubocop:disable all
 require 'swagger_helper'
 
 RSpec.describe 'api/user', type: :request do
@@ -59,3 +60,4 @@ RSpec.describe 'api/user', type: :request do
         end
     end
 end
+# rubocop:enable all
