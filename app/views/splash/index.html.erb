@@ -1,0 +1,17 @@
+<div class="container d-flex flex-column justify-content-center">
+  <h1 class="mb-5 text-center">Stack the Tech</h1>
+  <div class="intro-text">
+       <h2 class='text-center'>XTrac for your Xpenditure Tracking</h2>
+       <p class='text-center'>Turning a profit seems challenging; Employ Xtrac to keep track of your expenditures </p>
+  </div>
+
+
+  <% if user_signed_in? %>
+    <%= link_to "Sign out", destroy_user_session_path, class: "btn btn-warning mb-2" %>
+  <% else %>
+    <%= link_to "Sign in", new_user_session_path, class: "btn btn-primary mb-2" %><br>
+    <%= link_to "Sign up", new_user_registration_path, class: "btn btn-info" %>
+  <% end %>
+
+</div>
+  

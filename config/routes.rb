@@ -21,7 +21,7 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "articles#index"
-  root "users#index"
+  root "splash#index"
   resources :users, only: [:index, :show] do
     resources :posts, except: [:update] do
     resources :comments, except: [:update]

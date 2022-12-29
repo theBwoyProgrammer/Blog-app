@@ -19,12 +19,13 @@ class PostsController < ApplicationController
 
   def create
     post = Post.new(title: post_params[:title], text: post_params[:text], author: current_user)
-    flash[:notice] = if post.save
-                       'Post created successfully'
-                     else
-                       'Error'
-                     end
-    redirect_to user_posts_path
+    if post.save
+      flash[:success] = "Great! Your post has been created!"
+      redirect_to user_posts_path
+    else
+      flash.now[:error] = "Rats! A mistake occured, Fix it please."
+       render :new, status: :unprocessable_entity
+  end
   end
 
   def destroy
