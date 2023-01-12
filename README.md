@@ -1,4 +1,4 @@
-![](https://img.shields.io/badge/TechWolf404-blueviolet)
+![](https://img.shields.io/badge/theBwoyProgrammer-blueviolet)
 
 # Blog App
 
