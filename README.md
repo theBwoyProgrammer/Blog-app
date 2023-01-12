@@ -33,8 +33,8 @@ To get a local copy up and running follow these simple example steps.
 
 👤 **Author1**
 
-- GitHub: [@techwolf404](https://github.com/techwolf404)
-- Twitter: [@tech_wolf404](https://twitter.com/tech_wolf404)
+- GitHub: [@theBwoyProgrammer](https://github.com/theBwoyProgrammer)
+- Twitter: [@the_BwoyPrgrmmr](https://twitter.com/the_BwoyPrgrmmr)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/hatimdev/)
 
 ## 🤝 Contributing
